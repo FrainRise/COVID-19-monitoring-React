@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaAlignLeft } from 'react-icons/fa'
-
-import virusIcon from '../../images/virus.png'
+import { Link } from 'react-router-dom'
 
 import  './Navbar.css'
 
@@ -40,15 +39,21 @@ export default class Navbar extends React.Component {
                     : 'nav-links'
                     }
                 >
-                    <li> 
-                        <a href="/#" className="link link--kukuri" data-letters="Home">Home</a>
-                    </li>
-                    <li> 
-                        <a href="/#" className="link link--kukuri" data-letters="About Project">About Project</a> 
-                    </li>
-                    <li> 
-                        <a href="/#" className="link link--kukuri" data-letters="Contact Us">Contact Us</a>
-                    </li>
+                    <Link to='/'>
+                        <li> 
+                            <a href="/#" className="link link--kukuri" data-letters="Home">Home</a>
+                        </li>
+                    </Link>
+                    <Link to='/about-project'>
+                        <li> 
+                            <a href="/#" className="link link--kukuri" data-letters="About Project">About Project</a> 
+                        </li>
+                    </Link>
+                    <Link to='/contact-us'>
+                        <li> 
+                            <a href="/#" className="link link--kukuri" data-letters="Contact Us">Contact Us</a>
+                        </li>
+                    </Link>                    
                 </ul>
             </div>
         )

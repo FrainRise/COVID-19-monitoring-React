@@ -33,7 +33,7 @@ button {
     font-weight: bold;
 }
 
-.show-nav {
+.show-nav{
     height: 120px;
 }
 
@@ -113,7 +113,7 @@ button {
         color: #000000
     }
 
-    .show-nav {
+    .show-nav{
         padding: 0;
     }
 }

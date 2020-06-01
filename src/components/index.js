@@ -1,4 +1,3 @@
-export { default as Cards} from './Cards/Cards'
-export { default as Chart} from './Chart/Chart'
-export { default as CountryPicker} from './CountryPicker/CountryPicker'
-export { default as Navbar} from './Navbar/Navbar'
+export { default as MainPage} from './MainPage/MainPage'
+export { default as AboutPage} from './AboutPage/AboutPage'
+export { default as ContactPage} from './ContactPage/ContactPage'

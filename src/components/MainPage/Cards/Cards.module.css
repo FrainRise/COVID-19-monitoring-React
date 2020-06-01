@@ -1,0 +1,51 @@
+.container {
+    margin: 50px 0;
+}
+
+.card {
+    margin: 0 2% !important;
+    width: 450px;
+}
+
+.infected{ 
+    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+.infectedHeader {
+    color: rgba(0, 0, 255, 0.5);
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+}
+
+.recovered{ 
+    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+
+.recoveredHeader {
+    color: rgba(6, 180, 6, 0.5);
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+}
+
+.deaths{ 
+    border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+
+.deathsHeader {
+    color: rgba(255, 0, 0, 0.5);
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+}
+
+.peopleAmount {
+    font-weight: 700 !important;
+}
+
+@media only screen and (max-width: 770px) {
+    .card {
+        margin: 2% 0 !important;
+    }
+}
