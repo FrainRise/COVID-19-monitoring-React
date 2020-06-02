@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Cards, Chart, CountryPicker, Navbar } from './';
+import { Cards, Chart, CountryPicker, Navbar, Introduction } from './';
 import styles from './MainPage.module.css'
 import { fetchData } from '../../api'
 
-import image from '../../images/image.png'
+// import image from '../../images/image.png'
 
 class MainPage extends React.Component {
   state = {
@@ -30,7 +30,7 @@ class MainPage extends React.Component {
     return (
         <div className={styles.container}>
           <Navbar />
-          <img className={styles.image} src={image} alt="COVID-19" />
+          <Introduction />
           <Cards data={data} />
           <CountryPicker handleCountryChange={this.handleCountryChange} />
           <Chart data={data} country={country} />
