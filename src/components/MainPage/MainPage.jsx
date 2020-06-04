@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Cards, Chart, CountryPicker, Navbar, Introduction } from './';
+import { Cards, Chart, CountryPicker, Navbar, Introduction, StatTitle } from './';
 import styles from './MainPage.module.css'
 import { fetchData } from '../../api'
 
@@ -31,6 +31,7 @@ class MainPage extends React.Component {
         <div className={styles.container}>
           <Navbar />
           <Introduction />
+          <StatTitle />
           <Cards data={data} />
           <CountryPicker handleCountryChange={this.handleCountryChange} />
           <Chart data={data} country={country} />

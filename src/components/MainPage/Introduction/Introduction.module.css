@@ -43,11 +43,10 @@
     text-transform: uppercase;
     padding: 350px 0 0 150px;
     transition: all 0.5s ease-in;
+    animation: color-carousel 4s infinite;
 }
-.hashtag:hover {
-    color: #ffffff;
-    transition: all 0.5s ease-out;
-}
-.hashtag:hover {
-    color: #ffffff;
+
+@keyframes color-carousel {
+    50% { color: #ffffff; }
+    100% { color: rgba(0, 255, 0, 1); }
 }
