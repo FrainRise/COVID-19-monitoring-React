@@ -29,7 +29,6 @@ class MainPage extends React.Component {
 
     return (
         <div className={styles.container}>
-          <Navbar />
           <Introduction />
           <StatTitle />
           <Cards data={data} />

@@ -4,8 +4,8 @@ import styles from './Footer.module.css'
 
 const Footer = () => {
     return (
-        <div>
-            <h2>Footer component</h2>
+        <div className={styles.container}>
+            <h2 className={styles.footerCopyright}> Copyright © 2020 by Andrew Kovalenko. All rights reserved </h2>
         </div>
     )
 }
