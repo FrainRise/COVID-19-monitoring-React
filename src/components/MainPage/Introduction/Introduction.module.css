@@ -5,7 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../images/covid.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../assets/images/covid.jpg");
     opacity: 1;
 }
 
@@ -22,18 +22,11 @@
 
 .titleCovid {
     color: #ffffff;
-    font-size: 45px;
+    font-size: 40px;
     font-family: 'Fugaz One', cursive;
-    padding: 10% 0 0 20%;
+    padding: 325px 0 0 150px;
     letter-spacing: 3px;
-}
-
-.descriptionCovid {
-    color: #ffffff;
-    font-size: 30px;
-    font-family: 'Fugaz One', cursive;
-    padding: 5% 0 0 20%;
-    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .hashtag {

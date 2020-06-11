@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    height: 900px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../assets/images/contact-bg.jpg");
+    opacity: 1;
+}
+
+.contactTitle {
+    padding: 22% 0;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    animation: stretching 3000ms ease-in-out forwards 200ms,
+    blinky 2500ms linear infinite 2000ms;
+}
+
+
+@keyframes stretching {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 50% 50%;
+    }
+}
+
+  @keyframes blinky {
+    40% {
+      text-shadow: 0 0 15px rgb(223, 215, 113);
+    }
+}

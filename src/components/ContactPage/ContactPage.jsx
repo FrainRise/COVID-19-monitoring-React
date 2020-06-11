@@ -1,11 +1,13 @@
 import React from 'react'
 
 // import styles from './ContactPage.module.css'
+import { Introduction, ContactForm } from './'
 
 const ContactPage = () => {
     return (
         <div>
-            <h2>It's ContactPage component</h2>
+            <Introduction />
+            <ContactForm />
         </div>
     )
 }
