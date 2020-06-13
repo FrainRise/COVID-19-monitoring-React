@@ -7,7 +7,7 @@ li {
     font-weight: bold;
 }
 
-button {
+.navBtn {
     float: left;
     color: #ffffff;
     font-size: 30px;
@@ -110,7 +110,7 @@ button {
         text-align: center;
     }
     
-    button {
+    .navBtn {
         color: #000000
     }
 
@@ -119,7 +119,7 @@ button {
     }
 }
 @media screen and (min-width: 768px) {
-    button {
+    .navBtn {
         display: none;
     }
 

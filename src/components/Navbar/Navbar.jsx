@@ -31,7 +31,7 @@ export default class Navbar extends React.Component {
     render(){
         return (
             <div className='navBar' id="customHeader">
-                <button onClick={this.toggleBtn}>
+                <button onClick={this.toggleBtn} className='navBtn'>
                     <FaAlignLeft />
                 </button>
                 <ul className={this.state.toggle ? 

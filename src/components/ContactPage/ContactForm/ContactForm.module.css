@@ -1,0 +1,62 @@
+.contactForm {
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(0.25turn, #FFFFFF, #FFFFFF);;
+}
+
+.contactForm h2 {
+    color: #504e4e;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-top: 50px;
+
+}
+
+.contactForm input, textarea {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    outline: 0;
+    background: #f2f2f2;
+    width: 20%;
+    border: 0;
+    border-radius: 15px;
+    margin: 0 0 15px;
+    padding: 25px;
+    box-sizing: border-box;
+    resize: none;
+    
+}
+
+.contactForm input, .contactForm textarea, .contactForm .btnSumbit  {
+    display: block;
+    margin: 2% auto 0!important;
+}
+
+.btnSumbit {
+    margin-left: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1.5%;
+    width: 20%;
+    background: #f8bc17;
+    color: #595353;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px #f8bc17;
+    border-radius: 15px;
+    transition: 0.5s all ease-in-out;
+}
+
+.btnSumbit:hover {
+    background: #FFFFFF;
+    color: #f8bc17;
+    border: 2px solid #f8bc17;
+}

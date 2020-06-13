@@ -4,19 +4,43 @@ import styles from './ContactForm.module.css'
 
 const ContactForm = () => {
     return (
-        <div className={styles.container}>
-            <div className={styles.personalData}>
-                <input type="text" />
-                <input type="text"/>
-                <input type="text"/>
-            </div>
-            <div className={styles.message}>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <button></button>
-            </div>
-        </div>
+        <form className={styles.contactForm}>
+            <h2> Contact Form</h2>
+            <input 
+                name="fullname"
+                type="text"
+                placeholder="Enter your name" 
+                
+            />
+            <input 
+                name="email"
+                type="email"
+                placeholder="Enter your email" 
+                
+            />
+            <input 
+                name="subject"
+                type="text"
+                placeholder="Enter problem's subject" 
+                
+            />
+            <textarea 
+                name="description" 
+                placeholder="Describe your question"
+                id="" 
+                cols="30" 
+                rows="5"
+                
+            ></textarea>
+            <button 
+                type="submit"
+                name="submit" 
+                className={styles.btnSumbit}
+
+            >
+                Send Message
+            </button>
+        </form>
     )
 }
 
