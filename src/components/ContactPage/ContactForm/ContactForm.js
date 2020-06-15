@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styles from './ContactForm.module.css'
-import * as emailjs from 'emailjs'
+import * as emailjs from 'emailjs-com'
 
 export default class ContactForm extends React.Component {
 
@@ -18,7 +18,10 @@ export default class ContactForm extends React.Component {
         }
     }
 
-    handleChangeInput = e => this.setState({ [e.target.name]: e.target.value})
+    handleChangeInput = e => {
+        this.setState({ [e.target.name]: e.target.value});
+        console.log(e.target.name)
+    }
 
     validateMail() {
         let errors = {}, formIsValid = true;
@@ -64,7 +67,7 @@ export default class ContactForm extends React.Component {
             from_name: this.state.name + '(' + this.state.email + ')',
             to_name: 'frainrise@gmail.com',
             subject: this.state.subject,
-            message_html: this.state.message_html
+            message_html: this.state.description
         }
 
         emailjs.send('gmail','template_S6C5HxXY', templateParams, 'user_weOyQeOjIBJOmWL3D08QF')
@@ -89,7 +92,7 @@ export default class ContactForm extends React.Component {
             <form className={styles.contactForm}>
                 <h2> Contact Form</h2>
                 <input 
-                    name="fullname"
+                    name="name"
                     required='required' 
                     type="text"
                     placeholder="Enter your name"
