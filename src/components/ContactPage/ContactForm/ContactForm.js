@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styles from './ContactForm.module.css'
-// import * as emailjs from 'emailjs-com';
+import * as emailjs from 'emailjs'
 
 export default class ContactForm extends React.Component {
 
@@ -16,10 +16,9 @@ export default class ContactForm extends React.Component {
             subject: '',
             description: ''
         }
-
     }
 
-    handleChangeSubmit = e => this.setState({ [e.target.name]: e.target.value})
+    handleChangeInput = e => this.setState({ [e.target.name]: e.target.value})
 
     validateMail() {
         let errors = {}, formIsValid = true;
@@ -61,7 +60,28 @@ export default class ContactForm extends React.Component {
             return ;
         }
 
+        let templateParams = {
+            from_name: this.state.name + '(' + this.state.email + ')',
+            to_name: 'frainrise@gmail.com',
+            subject: this.state.subject,
+            message_html: this.state.message_html
+        }
 
+        emailjs.send('gmail','template_S6C5HxXY', templateParams, 'user_weOyQeOjIBJOmWL3D08QF')
+            .then((res) => {
+                console.log('SUCCESS', res.status, res.text)
+                alert('The message has been sent')
+            }, function (err){
+                console.log(err);
+                alert('Sorry, something goes wrong :C');
+            })
+
+        this.setState({
+            name: '',
+            email: '',
+            subject: '',
+            description: ''
+        })   
     }
 
     render(){
@@ -70,35 +90,47 @@ export default class ContactForm extends React.Component {
                 <h2> Contact Form</h2>
                 <input 
                     name="fullname"
+                    required='required' 
                     type="text"
-                    placeholder="Enter your name" 
-                    
+                    placeholder="Enter your name"
+                    onChange={this.handleChangeInput} 
+                    value={this.state.name}
+                    error={this.state.errors.name}
                 />
                 <input 
                     name="email"
+                    required='required' 
                     type="email"
                     placeholder="Enter your email" 
-                    
+                    onChange={this.handleChangeInput} 
+                    value={this.state.email}
+                    error={this.state.errors.email}
                 />
                 <input 
                     name="subject"
+                    required='required' 
                     type="text"
                     placeholder="Enter problem's subject" 
-                    
+                    onChange={this.handleChangeInput} 
+                    value={this.state.subject}
+                    error={this.state.errors.subject}
                 />
                 <textarea 
-                    name="description" 
+                    name="description"
+                    required='required' 
                     placeholder="Describe your question"
                     id="" 
                     cols="30"   
                     rows="5"
-                    
+                    onChange={this.handleChangeInput} 
+                    value={this.state.description}
+                    error={this.state.errors.description}
                 ></textarea>
                 <button 
                     type="submit"
                     name="submit" 
                     className={styles.btnSumbit}
-
+                    onClick={this.sendMessage.bind(this)}
                 >
                     Send Message
                 </button>
