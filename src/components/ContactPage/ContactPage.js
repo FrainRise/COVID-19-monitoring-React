@@ -1,7 +1,7 @@
 import React from 'react'
 
-// import styles from './ContactPage.module.css'
-import { Introduction, ContactForm } from './'
+import { Introduction, ContactForm } from '.'
+import './responsive-contact.css'
 
 const ContactPage = () => {
     return (

@@ -1,7 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import { Cards, Chart, CountryPicker, Introduction, StatTitle } from './';
-import styles from './MainPage.module.css'
+import './MainPage.css'
+import './responsive-main.css'
+
+import { Cards, Chart, CountryPicker, Introduction, StatTitle } from '.'
 import { fetchData } from '../../api'
 
 // import image from '../../images/image.png'
@@ -28,7 +30,7 @@ class MainPage extends React.Component {
     const { data, country } = this.state;
 
     return (
-        <div className={styles.container}>
+        <div className="container-main">
           <Introduction />
           <StatTitle />
           <Cards data={data} />

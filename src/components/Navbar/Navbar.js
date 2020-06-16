@@ -3,6 +3,7 @@ import { FaAlignLeft } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 import  './Navbar.css'
+import './responsive-navbar.css'
 
 export default class Navbar extends React.Component {
     state = {

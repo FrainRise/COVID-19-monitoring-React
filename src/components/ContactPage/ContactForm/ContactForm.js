@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './ContactForm.module.css'
+import './ContactForm.css'
 import * as emailjs from 'emailjs-com'
 
 export default class ContactForm extends React.Component {
@@ -89,7 +89,7 @@ export default class ContactForm extends React.Component {
 
     render(){
         return (
-            <form className={styles.contactForm}>
+            <form className="contactForm">
                 <h2> Contact Form</h2>
                 <input 
                     name="name"
@@ -132,7 +132,7 @@ export default class ContactForm extends React.Component {
                 <button 
                     type="submit"
                     name="submit" 
-                    className={styles.btnSumbit}
+                    className="btnSumbit"
                     onClick={this.sendMessage.bind(this)}
                 >
                     Send Message

@@ -70,7 +70,7 @@
     letter-spacing: 2px;
 }
 
-.wrapper {
+.wrapper-about {
     display: flex;
     flex-direction: row;
     justify-content: center;
