@@ -1,0 +1,109 @@
+.mainContainer {
+    width: 100%;
+    background-color: #f5f3f3;
+}
+
+.containerUp {
+    background-color: #ffffff;
+    margin: 0 15%;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+}
+
+.containerUp .titleMission {
+    padding-top: 5%;
+    color: #696969;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.containerUp .descriptionMission {
+    color: #969696;
+    margin: 35px 0;
+    padding: 0 15% 2% 15%;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.containerUp .titleAbout {
+    color: #696969;
+    margin: 30px 0;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.containerUp .descriptionAbout {
+    color: #969696;
+    margin-top: 10px;
+    padding: 0 15% 2% 15%;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+.containerDown {
+    margin: 2% 15% 0 15%;
+    background-color: #ffffff;
+    text-align: center;
+    -webkit-box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+}
+
+.containerDown .titleTeam {
+    padding-top: 5%;
+    color: #696969;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.personCard {
+   margin: 8%; 
+}
+
+.personCard .personImg {
+    border-radius: 100%;
+}
+
+.personCard .personName {
+    color: #000000;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.personCard .personPosition {
+    color: #696969;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.personCard .personDescr {
+    margin-top: 25px;
+    color: #696969;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
