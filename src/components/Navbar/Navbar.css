@@ -15,6 +15,12 @@ li {
     cursor: pointer;
     border: none;
     outline: none;
+    transition: all .5s ease-in;
+}
+
+.navBtn:hover {
+    transition: all .5s ease-out;
+    color: #f8b703d7;
 }
 
 .navBar {
@@ -74,7 +80,7 @@ li {
 	top: 50%;
 	margin-top: -8px;
 	right: 0;
-	background: #F9F9F9;
+	background: #f8b703d7;
 	transform: translate3d(-100%,0,0);
 	transition: transform 0.4s;
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
@@ -99,33 +105,4 @@ li {
 	width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    .link {
-        font-size: 15px;
-    }
-    li {
-        padding: 10px 0;
-        font-size: 20px;
-        color: #000000;
-        text-align: center;
-    }
-    
-    .navBtn {
-        color: #000000
-    }
 
-    .show-nav{
-        padding: 0;
-    }
-}
-@media screen and (min-width: 768px) {
-    .navBtn {
-        display: none;
-    }
-
-    .nav-links {
-        height: auto;
-        display: flex;
-        justify-content: center;
-    }
-}
