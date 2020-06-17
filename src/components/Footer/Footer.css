@@ -1,7 +1,7 @@
 .container {
+    position: relative;
     height: 85px;
     width: 100% ;
-    padding-top: 1%;
     background-color: #000000;
     display: flex;
     justify-content: center;
@@ -9,6 +9,11 @@
 
 .footerCopyright {
     color: #ffffff;
-    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
