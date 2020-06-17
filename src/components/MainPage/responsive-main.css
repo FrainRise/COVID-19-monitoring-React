@@ -1,0 +1,288 @@
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+     /* Introduction Component */
+    .container-main  {
+        margin: 0;
+    }
+    .wrapper-intro {
+        height: 550px;
+        width: 100%;
+    }
+
+    .container-intro {
+        flex-direction: column !important;
+    }
+    
+    .row {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titleCovid {
+        margin-top: 40%;
+        font-size: 20px !important;
+        padding: 0!important;
+        text-align: center;
+    }
+    
+    .hashtag {
+        margin-top: 15%;
+        font-size: 18px !important;
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    /* StatTitle Component */
+    .container-stat {
+        height: 100px;
+    }
+    
+    .title {
+        font-size: 20px;
+        margin-top: 100px;
+        
+    }
+
+    /* Card Component */
+
+    .container-card {
+        margin: 150px 0;
+    }
+        
+    .card {
+        margin: 3% 20% !important;
+        width: 450px;
+    }  
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .container-main  {
+        margin: 0;
+    }
+    .wrapper-intro {
+        height: 700px;
+    }
+
+    .container-intro {
+        flex-direction: column !important;
+    }
+    
+    .row {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titleCovid {
+        margin-top: 40%;
+        font-size: 30px !important;
+        padding: 0!important;
+        text-align: center;
+    }
+    
+    .hashtag {
+        margin-top: 15%;
+        font-size: 27px !important;
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    /* StatTitle Component */
+    .title {
+         font-size: 25px;
+         margin-top: 100px;
+            
+    }
+
+    /* Card Component */
+
+    .container-card {
+        margin: 75px 0;
+    }
+            
+    .card {
+        margin: 3% 20% !important;
+        width: 450px;
+    }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) and (max-width: 992px) {
+     /* Introduction Component */
+    .wrapper-intro {
+        height: 700px;
+        width: 100%;
+    }
+
+    .row {
+        max-width: 100% !important;
+        text-align: center;
+    }
+    
+    .titleCovid {
+        margin-top: 30%;
+        font-size: 35px !important;
+    }
+    
+    .hashtag {
+        margin-top: 15%;
+        font-size: 32px !important;
+    }
+
+    /* StatTitle Component */
+    .title {
+         font-size: 30px;
+         margin-top: 100px;   
+    }
+
+    /* Card Component */    
+    .container-card {
+        margin: 75px 0;
+    }
+            
+    .card {
+        margin: 3% 10% !important;
+        width: 250px;
+    }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) and (max-width: 1200px) {
+     /* Introduction Component */
+    .wrapper-intro {
+        height: 760px;
+        width: 100%;
+    }
+    
+    .wrapper-intro {
+        height: 700px;
+        width: 100%;
+    }
+
+    .row {
+        max-width: 100% !important;
+        text-align: center;
+    }
+    
+    .titleCovid {
+        margin-top: 15%;
+        font-size: 35px !important;
+    }
+    
+    .hashtag {
+        margin-top: 15%;
+        font-size: 32px !important;
+    }
+
+    /* StatTitle Component */      
+    .title {
+         font-size: 37px;
+         margin-top: 100px;
+            
+    }
+
+    /* Card Component */
+    .container-card {
+        margin: 75px 0;
+    }
+            
+    .card {
+        margin: 3% 1% !important;
+        width: 350px;
+    }
+ }
+
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) and (max-width: 1800px) {
+     /* Introduction Component */
+    .wrapper-intro {
+        height: 900px;
+        width: 100%;
+    }
+
+    .row {
+        max-width: 100% !important;
+        text-align: center;
+    }
+    
+    .titleCovid {
+        margin-top: 20%;
+        font-size: 50px !important;
+    }
+    
+    .hashtag {
+        margin-top: 10%;
+        font-size: 45px;
+    }   
+
+    /* StatTitle Component */
+    .title {
+        font-size: 40px;
+        margin-top: 100px;
+               
+    }
+
+    /* Card Component */
+    .container-card {
+        margin: 75px 0;
+    }
+            
+    .card {
+        margin: 3% 4% !important;
+        width: 450px;
+    }
+ 
+ } 
+
+ @media only screen and (min-width: 1800px) {
+     /* Introduction Component */
+    .wrapper-intro {
+        height: 900px;
+        width: 100%;
+    }
+    
+    .container-intro {
+        max-width: 100%;
+        height: 900px;
+        display:  flex;
+        flex-direction: row;
+    }
+
+    .row {
+        max-width: 850px;
+    }
+    
+    .titleCovid {
+        font-size: 40px;
+        padding: 325px 0 0 150px;
+        letter-spacing: 3px;
+    }
+    
+    .hashtag {
+        font-size: 60px;
+        padding: 350px 0 0 150px;
+    }
+
+    /* StatTitle Component */
+    .container-stat {
+        height: 200px;
+    }
+    
+    .title {
+        font-size: 45px;
+        margin-top: 150px;
+    }
+
+    /* Card Component */
+
+    .container-card {
+        margin: 150px 0;
+    }
+    
+    .card {
+        margin: 0 2% !important;
+        width: 450px;
+    }
+ } 
