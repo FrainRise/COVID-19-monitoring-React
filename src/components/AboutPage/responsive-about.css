@@ -1,0 +1,85 @@
+@media only screen and (max-width: 600px) {
+    .containerUp {
+        margin: 0 5%;
+    }
+
+    .containerUp .titleMission {
+        padding-top: 25%;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .containerUp .descriptionMission {
+        margin: 75px 0;
+        padding: 0 15% 2% 15%;
+        font-size: 20px;
+    }
+
+    .containerUp .titleAbout {
+        margin: 60px 0;
+        font-size: 30px;
+    }
+
+    .containerUp .descriptionAbout {
+        margin-top: 20px;
+        padding: 0 15% 5% 15%;
+        font-size: 20px;
+    }
+
+    .containerDown {
+        margin: 6% 5% 0 5%;
+    }
+
+    .containerDown .titleTeam {
+        padding-top: 15%;
+        font-size: 30px;
+    }
+    
+    .wrapper-about {
+        flex-direction: column;
+    }   
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .containerUp {
+        margin: 0 5%;
+    }
+
+    .containerDown {
+        margin: 5% 5% 0 5%;
+    }
+
+    .wrapper-about {
+        flex-direction: column;
+    }  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .containerUp {
+        margin: 0 10%;
+    }
+
+    .containerDown {
+        margin: 4% 10% 0 10%;
+    }
+
+    
+    .wrapper-about {
+        flex-direction: column;
+    }  
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .containerUp {
+        margin: 0 10%;
+    }
+
+    .containerDown {
+        margin: 3% 10% 0 10%;
+    }
+
+    
+    .wrapper-about {
+        flex-direction: column;
+    }
+}
