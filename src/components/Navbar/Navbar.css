@@ -1,3 +1,35 @@
+.button-container {
+	margin: 4px 5px 2px 25px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.first-bar, .second-bar, .third-bar {
+	width: 35px;
+	height: 5px;
+	background-color: #333;
+	margin: 6px 0;
+	border-radius: 25px;
+	transition: all 0.4s ease-in;
+}
+
+.clicked .first-bar {
+	-webkit-transform: rotate(225deg) translate(-15px, 6px);
+	transform: rotate(225deg) translate(-15px, 6px);
+}
+  
+.clicked .second-bar {
+	opacity: 0;
+	-webkit-transform: rotate(360deg);
+	transform: translate(20px);
+}
+  
+.clicked .third-bar {
+	-webkit-transform: rotate(135deg) translate(-20px, 2px);
+	transform: rotate(135deg) translate(-21px, 1px);
+}
+
+
 li { 
     padding: 5px 55px;
     font-size: 22px;

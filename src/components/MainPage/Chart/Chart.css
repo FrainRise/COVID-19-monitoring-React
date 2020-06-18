@@ -2,10 +2,12 @@
     display: flex;
     justify-content: center;
     width: 75%;
+    padding-bottom: 75px;
 }
 
 @media only screen and (max-width: 770px) {
     .container-chart {
         width: 100%;
+
     }
 }

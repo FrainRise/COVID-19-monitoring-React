@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaAlignLeft } from 'react-icons/fa'
+//import { FaAlignLeft } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 import  './Navbar.css'
@@ -32,27 +32,32 @@ export default class Navbar extends React.Component {
     render(){
         return (
             <div className='navBar' id="customHeader">
-                <button onClick={this.toggleBtn} className='navBtn'>
+                {/*<button onClick={this.toggleBtn} className='navBtn'>
                     <FaAlignLeft />
-                </button>
+                </button> */}
+                <div className={this.state.toggle ? 'button-container clicked' : 'button-container '} onClick={this.toggleBtn}>
+                    <div className="first-bar"></div>
+                    <div className="second-bar"></div>
+                    <div className="third-bar"></div>
+                </div>
                 <ul className={this.state.toggle ? 
                     'nav-links show-nav'
-                    : 'nav-links'
+                    : 'nav-links hide-nav-link'
                     }
                 >
                     <Link to='/'>
                         <li> 
-                            <a href="/#" className="link link--kukuri" data-letters="Home">Home</a>
+                            <h2 className="link link--kukuri" data-letters="Home">Home</h2>
                         </li>
                     </Link>
                     <Link to='/about-project'>
                         <li> 
-                            <a href="/#" className="link link--kukuri" data-letters="About Project">About Project</a> 
+                            <h2 className="link link--kukuri" data-letters="About Project">About Project</h2> 
                         </li>
                     </Link>
                     <Link to='/contact-us'>
                         <li> 
-                            <a href="/#" className="link link--kukuri" data-letters="Contact Us">Contact Us</a>
+                            <h2  className="link link--kukuri" data-letters="Contact Us">Contact Us</h2>
                         </li>
                     </Link>                    
                 </ul>
