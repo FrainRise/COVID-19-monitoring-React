@@ -1,11 +1,13 @@
 import React from 'react'
 import { Card, CardContent, Typography, Grid } from '@material-ui/core'
 import CountUp from 'react-countup'
+
 import './Cards.css'
+import Loader from '../Loader/Loader'
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate }}) => {
     if(!confirmed) {
-        return 'Loading...';
+        return <Loader />;
     }
     return (
         <div className="container-card">
