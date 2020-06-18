@@ -1,0 +1,112 @@
+@media only screen and (max-width: 600px) {
+    .wrapper-contact {
+        height: 550px;
+    }
+    
+    .contactTitle {
+        padding: 200px 0;
+        font-size: 32px;
+    }
+
+    .contactForm {
+        height: 770px;
+    }
+    
+    .contactForm h2 {
+        font-size: 32px;
+        padding: 75px 0 50px 0;
+    
+    }
+    
+    .contactForm input, textarea {
+        width: 80%;
+        padding: 25px; 
+    }
+    
+    .contactForm input, .contactForm textarea, .contactForm .btnSumbit  {
+        display: block;
+        margin: 5% auto 0!important;
+    }
+    
+    .btnSumbit {
+        margin: 2% 0 2% 40%;
+        padding: 5%;
+        width: 80%;
+    }
+  
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .wrapper-contact {
+        height: 700px;
+    }
+    
+    .contactTitle {
+        padding: 250px 0;
+        font-size: 32px;
+    }
+
+    .contactForm {
+        height: 850px;
+    }
+    
+    .contactForm h2 {
+        font-size: 32px;
+        padding: 75px 0 50px 0;
+    
+    }
+    
+    .contactForm input, textarea {
+        width: 400px;
+        padding: 25px; 
+    }
+    
+    .contactForm input, .contactForm textarea, .contactForm .btnSumbit  {
+        margin: 5% auto 0!important;
+    }
+    
+    .btnSumbit {
+        padding: 3.5%;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+
+    .contactTitle {
+        padding: 350px 0;
+        font-size: 40px;
+    }
+    
+    .contactForm h2 {
+        font-size: 40px;
+        padding: 75px 0 50px 0;
+    
+    }
+    
+    .contactForm input, textarea {
+        width: 400px;
+        padding: 25px; 
+    }
+
+    .btnSumbit {
+        padding: 3.5%;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 992px)  {
+    .contactForm h2 {
+        font-size: 40px;
+        padding: 75px 0 25px 0;
+    
+    }
+    
+    .contactForm input, textarea {
+        width: 400px;
+        padding: 25px; 
+    }
+    
+    .btnSumbit {
+        width: 400px;
+    }
+}
