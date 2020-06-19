@@ -9,7 +9,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../assets/images/contact-bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/images/contact-bg.jpg");
     opacity: 1;
 }
 
@@ -38,6 +38,6 @@
 
   @keyframes blinky {
     40% {
-      text-shadow: 0 0 15px rgb(223, 215, 113);
+      text-shadow: 0 0 15px rgba(0, 255, 0, 1);
     }
 }

@@ -3,7 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../assets/images/covid.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/images/covid.jpg");
     opacity: 1;
 }
 
@@ -18,6 +18,28 @@
     text-transform: uppercase;
     transition: all 0.5s ease-in;
     animation: color-carousel 4s infinite;
+}
+
+.btn-stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: rgba(0, 255, 0, 1);
+    border: none;
+    margin: 0 auto;
+    transition: all 0.5s ease-in;
+}
+
+.btn-stat:hover {
+    background-color: transparent;
+    color:#ffffff;
+    border: 1px solid #ffffff;
 }
 
 @keyframes color-carousel {

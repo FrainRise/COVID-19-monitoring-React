@@ -13,6 +13,9 @@ const Introduction = () => {
                     <h2 className="hashtag">#Staysafestayhome</h2>
                 </div>
             </div>
+            <button type="button" className="btn-stat">
+                Click Me
+            </button>
         </div>
     )
 }
