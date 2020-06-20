@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
 import  './Introduction.css'
 
 const Introduction = () => {
@@ -13,9 +14,12 @@ const Introduction = () => {
                     <h2 className="hashtag">#Staysafestayhome</h2>
                 </div>
             </div>
-            <button type="button" className="btn-stat">
-                Show Chart
-            </button>
+            <Link to='/covid-stat' style={{textDecoration: 'none'}}>
+                <button type="button" className="btn-stat">
+                    Show Chart
+                </button>
+            </Link>
+
         </div>
     )
 }
