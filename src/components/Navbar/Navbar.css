@@ -1,3 +1,7 @@
+.active {
+	color: rgba(0, 255, 0, 1) !important;	
+}
+
 .button-container {
 	margin: 4px 5px 2px 25px;
 	display: inline-block;
@@ -77,7 +81,7 @@ li:visited {
 }
 
 .show-nav{
-	height: 120px;
+	height: 150px;
 	-webkit-transition: height 0.5s cubic-bezier(0, 0.4, 0.9,1);
 	transition: height 0.5s cubic-bezier(0, 0.4, 0.9,1);
 	-webkit-animation: animate 1s; 

@@ -2,6 +2,7 @@
     .link {
         font-size: 15px;
     }
+
     li {
         margin-top: 10px;
         padding: 10px 0;
@@ -15,9 +16,8 @@
     }
 
     .hide-nav-link {
-        display: none
+        display: none;
     }
-
     
     .show-nav{
         padding: 0;
@@ -26,6 +26,12 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px){
+    .logo{
+        height: 50px;
+        width: 60px;
+        margin-right: 25px;
+    }
+    
     .navBtn {
         display: none !important;
     }
@@ -38,11 +44,17 @@
         height: auto;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
 
     li {
         padding: 0 25px 0 25px;
+    }
+
+    .link {
+        font-size: 20px !important;
+        padding-top: 2px;
     }
 }
 
@@ -59,9 +71,15 @@
         height: auto;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     li {
         padding: 0 50px 0 50px;
+    }
+
+    .link {
+        font-size: 28px !important;
+        padding-top: 2px;
     }
 }
