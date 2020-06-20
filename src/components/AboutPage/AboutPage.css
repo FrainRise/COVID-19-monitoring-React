@@ -19,6 +19,7 @@
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .containerUp .descriptionMission {
@@ -39,6 +40,7 @@
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .containerUp .descriptionAbout {
@@ -68,6 +70,7 @@
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .wrapper-about {

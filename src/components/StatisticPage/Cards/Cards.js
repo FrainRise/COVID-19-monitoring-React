@@ -3,7 +3,7 @@ import { Card, CardContent, Typography, Grid } from '@material-ui/core'
 import CountUp from 'react-countup'
 
 import './Cards.css'
-import Loader from '../Loader/Loader'
+import Loader from '../../MainPage/Loader/Loader'
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate }}) => {
     if(!confirmed) {

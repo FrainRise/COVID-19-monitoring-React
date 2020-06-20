@@ -1,0 +1,134 @@
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+
+   /* StatTitle Component */
+   .container-stat {
+       height: 100px;
+   }
+   
+   .title {
+       font-size: 20px;
+       margin-top: 100px;
+       
+   }
+
+   /* Card Component */
+
+   .container-card {
+       margin: 150px 0;
+   }
+       
+   .card {
+       margin: 3% 20% !important;
+       width: 450px;
+   }  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+   /* StatTitle Component */
+   .title {
+        font-size: 25px;
+        margin-top: 100px;
+           
+   }
+
+   /* Card Component */
+
+   .container-card {
+       margin: 75px 0;
+   }
+           
+   .card {
+       margin: 3% 20% !important;
+       width: 450px;
+   }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+   /* StatTitle Component */
+   .title {
+        font-size: 30px;
+        margin-top: 100px;   
+   }
+
+   /* Card Component */    
+   .container-card {
+       margin: 75px 0;
+   }
+           
+   .card {
+       margin: 3% 10% !important;
+       width: 250px;
+   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+   
+    /* StatTitle Component */      
+   .title {
+        font-size: 37px;
+        margin-top: 100px;
+           
+   }
+
+   /* Card Component */
+   .container-card {
+       margin: 75px 0;
+   }
+           
+   .card {
+       margin: 3% 1% !important;
+       width: 350px;
+   }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+  
+    /* StatTitle Component */
+   .title {
+       font-size: 40px;
+       margin-top: 100px;
+              
+   }
+
+   /* Card Component */
+   .container-card {
+       margin: 75px 0;
+   }
+           
+   .card {
+       margin: 3% 4% !important;
+       width: 450px;
+   }
+
+} 
+
+@media only screen and (min-width: 1800px) {
+   
+    /* StatTitle Component */
+   .container-stat {
+       height: 200px;
+   }
+   
+   .title {
+       font-size: 45px;
+       margin-top: 150px;
+   }
+
+   /* Card Component */
+
+   .container-card {
+       margin: 150px 0;
+   }
+   
+   .card {
+       margin: 0 2% !important;
+       width: 450px;
+   }
+} 

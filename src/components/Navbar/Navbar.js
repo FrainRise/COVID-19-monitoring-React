@@ -17,7 +17,6 @@ export default class Navbar extends React.Component {
 
     addClassActive = (id) => {
         this.setState({ activeId: id })
-        console.log('acitve is', this.state.isActive )
     }
 
     componentDidMount() {
@@ -40,10 +39,11 @@ export default class Navbar extends React.Component {
     render(){
         const navLinks = [
             {id: 1, name: 'Home', route: '/'},
-            {id: 2, name: 'About Project', route: '/about-project'},
-            {id: 3, name: 'Contact Us', route: '/contact-us'}
+            {id: 2, name: 'Covid-19', route: '/covid-stat'},
+            {id: 3, name: 'About Project', route: '/about-project'},
+            {id: 4, name: 'Contact Us', route: '/contact-us'}
         ];
-        
+
         return (
             <div className='navBar' id="customHeader">
                 <div className={this.state.isToggled ? 'button-container clicked' : 'button-container '} onClick={this.toggleBtn}>

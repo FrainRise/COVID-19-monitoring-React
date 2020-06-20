@@ -14,7 +14,7 @@ const Introduction = () => {
                 </div>
             </div>
             <button type="button" className="btn-stat">
-                Click Me
+                Show Chart
             </button>
         </div>
     )
