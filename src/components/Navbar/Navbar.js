@@ -8,16 +8,15 @@ import './responsive-navbar.css'
 export default class Navbar extends React.Component {
     state = {
         isToggled: false,
-        isActive: false,
-        selectedLinkId: 1
+        activeId: 1
     }
 
     toggleBtn = () => {
         this.setState({ isToggled: !this.state.isToggled })
     }
 
-    addClassActive = () => {
-        this.setState({ isActive: !this.state.isActive })
+    addClassActive = (id) => {
+        this.setState({ activeId: id })
         console.log('acitve is', this.state.isActive )
     }
 
@@ -43,7 +42,8 @@ export default class Navbar extends React.Component {
             {id: 1, name: 'Home', route: '/'},
             {id: 2, name: 'About Project', route: '/about-project'},
             {id: 3, name: 'Contact Us', route: '/contact-us'}
-        ]
+        ];
+        
         return (
             <div className='navBar' id="customHeader">
                 <div className={this.state.isToggled ? 'button-container clicked' : 'button-container '} onClick={this.toggleBtn}>
@@ -56,34 +56,20 @@ export default class Navbar extends React.Component {
                     : 'nav-links hide-nav-link'
                     }
                 >
-                    { navLinks.map((link) => {
-                      return (
-                        <Link 
-                            key={link.id} 
-                            to={link.route}
-                        >
-                            <li onClick={this.addClassActive}> 
-                                <h2 className="link link--kukuri" data-letters={link.name}>{link.name}</h2>
-                            </li>
-                        </Link>
-                      )  
-                    })
-                    }
-                    {/* <Link to='/'>
-                        <li> 
-                            <h2 className="link link--kukuri" data-letters="Home">Home</h2>
-                        </li>
-                    </Link>
-                   <Link to='/about-project'>
-                        <li> 
-                            <h2 className={this.state.isActive ? "link link--kukuri active" : "link link--kukuri"} data-letters="About Project">About Project</h2> 
-                        </li>
-                    </Link>
-                    <Link to='/contact-us'>
-                        <li> 
-                            <h2  className="link link--kukuri" data-letters="Contact Us">Contact Us</h2>
-                        </li>
-                    </Link>    */}                
+                    { 
+                        navLinks.map((link) => {
+                            return (
+                                <Link 
+                                    key={link.id} 
+                                    to={link.route}
+                                >
+                                    <li onClick={this.addClassActive.bind(this, link.id)}> 
+                                        <h2 className={this.state.activeId === link.id ? "link link--kukuri active" : "link link--kukuri"} data-letters={link.name}>{link.name}</h2>
+                                    </li>
+                                </Link>
+                            )  
+                        })
+                    }             
                 </ul>
             </div>
         )
