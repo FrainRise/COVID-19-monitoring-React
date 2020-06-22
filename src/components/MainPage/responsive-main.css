@@ -41,27 +41,30 @@
         font-size: 16px;
     }
 
-    /* StatTitle Component */
-    .container-stat {
+    /* RulesSection */
+    .rules-container{
+        height: 1450px;
+    }
+
+    .rules-title {
+        margin: 75px 25px;
+        font-size: 25px;
+    }
+
+    .wrapper {
+        display: block !important;
+
+    }
+
+    .rule-image {
+        width: 100px;
         height: 100px;
     }
-    
-    .title {
-        font-size: 20px;
-        margin-top: 100px;
-        
-    }
 
-    /* Card Component */
-
-    .container-card {
-        margin: 150px 0;
+    .rule-description {
+        padding: 15px;
+        width: 70vw;
     }
-        
-    .card {
-        margin: 3% 20% !important;
-        width: 450px;
-    }  
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -100,26 +103,34 @@
     .btn-stat {
         margin-top: 50px !important;
         width:  200px;
-        padding: 20px;
+        padding: 30px;
         font-size: 22px;
     }
 
-    /* StatTitle Component */
-    .title {
-         font-size: 25px;
-         margin-top: 100px;
-            
+    /* RulesSection */
+    .rules-container{
+        height: 1450px;
     }
 
-    /* Card Component */
-
-    .container-card {
-        margin: 75px 0;
+    .rules-title {
+        margin: 75px 25px;
+        font-size: 25px;
     }
-            
-    .card {
-        margin: 3% 20% !important;
-        width: 450px;
+
+    .wrapper {
+        display: block !important;
+
+    }
+
+    .rule-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .rule-description {
+        font-size: 20px;
+        padding: 15px;
+        width: 70vw;
     }
  }
  
@@ -149,24 +160,29 @@
     .btn-stat {
         margin-top: 40px !important;
         width:  200px;
-        padding: 20px;
+        padding: 30px;
         font-size: 22px;
     }
 
-    /* StatTitle Component */
-    .title {
-         font-size: 30px;
-         margin-top: 100px;   
+    /* RulesSection */
+    .rules-container{
+        height: 1450px;
     }
 
-    /* Card Component */    
-    .container-card {
-        margin: 75px 0;
+    .rules-title {
+        margin: 75px 25px;
+        font-size: 35px;
     }
-            
-    .card {
-        margin: 3% 10% !important;
-        width: 250px;
+
+    .rule-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .rule-description {
+        font-size: 27px;
+        padding: 15px;
+        width: 55vw;
     }
  }
  
@@ -202,26 +218,30 @@
     .btn-stat {
         margin-top: 80px !important;
         width:  200px;
-        padding: 20px;
+        padding: 30px;
         font-size: 22px;
     }
 
-
-    /* StatTitle Component */      
-    .title {
-         font-size: 37px;
-         margin-top: 100px;
-            
+    /* RulesSection */
+    .rules-container{
+        height: 1450px;
     }
 
-    /* Card Component */
-    .container-card {
-        margin: 75px 0;
+    .rules-title {
+        margin: 75px 25px;
+        font-size: 40px;
     }
-            
-    .card {
-        margin: 3% 1% !important;
-        width: 350px;
+
+    .rule-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .rule-description {
+        padding: 50px;
+        font-size: 25px;
+        width: 500px;
+        height: 200px;
     }
  }
 
@@ -253,25 +273,34 @@
         width:  250px;
         padding: 25px;
         font-size: 25px;
-    }   
-
-    /* StatTitle Component */
-    .title {
-        font-size: 40px;
-        margin-top: 100px;
-               
-    }
-
-    /* Card Component */
-    .container-card {
-        margin: 75px 0;
-    }
-            
-    .card {
-        margin: 3% 4% !important;
-        width: 450px;
-    }
- 
+    }  
+    
+        /* RulesSection Component */
+        .rules-container{
+            height: 1500px;
+        }
+    
+        .rules-title {
+            margin: 75px 0;
+            font-size: 40px;
+        }
+    
+        .rules-title {
+            margin: 75px 25px;
+            font-size: 25px;
+        }
+    
+        .rule-image {
+            width: 200px;
+            height: 200px;
+        }
+    
+        .rule-description {
+            padding: 50px;
+            font-size: 25px;
+            width: 500px;
+            height: 200px;
+        }
  } 
 
  @media only screen and (min-width: 1800px) {
@@ -310,24 +339,30 @@
         font-size: 25px;
     }
 
-    /* StatTitle Component */
-    .container-stat {
+    /* RulesSection Component */
+    .rules-container{
+        height: 1500px;
+    }
+
+    .rules-title {
+        margin: 75px 0;
+        font-size: 40px;
+    }
+
+    .rules-title {
+        margin: 75px 25px;
+        font-size: 40px;
+    }
+
+    .rule-image {
+        width: 200px;
         height: 200px;
     }
-    
-    .title {
-        font-size: 45px;
-        margin-top: 150px;
-    }
 
-    /* Card Component */
-
-    .container-card {
-        margin: 150px 0;
-    }
-    
-    .card {
-        margin: 0 2% !important;
-        width: 450px;
+    .rule-description {
+        padding: 50px;
+        font-size: 25px;
+        width: 500px;
+        height: 200px;
     }
  } 
