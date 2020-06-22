@@ -1,11 +1,13 @@
-import React from 'React'
+import React from 'react'
 
 import './SymptomsSection.css'
 
-export const SymptomsSection = () => {
+const SymptomsSection = () => {
     return (
         <div className="symptoms-container">
             <h2> It's SymptomsSection component</h2>
         </div>
     )
 }
+
+export default SymptomsSection;

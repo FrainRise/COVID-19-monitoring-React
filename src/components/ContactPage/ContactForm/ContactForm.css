@@ -35,6 +35,7 @@
 }
 
 .btnSumbit {
+    cursor: pointer;
     margin: 25px 0 25px 40%;
     padding: 35px;
     width: 20%;

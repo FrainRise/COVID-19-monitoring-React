@@ -96,7 +96,7 @@ li:visited {
 
 	100% { 
 		opacity: 1;
-  		height: 120px;
+  		height: 250px;
 	}
 }
 
@@ -104,6 +104,7 @@ li:visited {
   position: fixed;
   top: 0;
   max-width: 100%;
+  background:white;
 }
 
 .link {
@@ -138,7 +139,7 @@ li:visited {
 	right: 0;
 	background: rgba(0, 255, 0, 1);
 	transform: translate3d(-100%,0,0);
-	transition: transform 0.4s;
+	transition: transform 0.8s;
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
@@ -154,7 +155,7 @@ li:visited {
 	color: #424242;
 	white-space: nowrap;
 	width: 0%;
-	transition: width 0.4s 0.3s;
+	transition: width 0.8s 0.6s;
 }
 
 .link--kukuri:hover::before {
