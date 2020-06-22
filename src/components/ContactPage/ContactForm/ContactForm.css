@@ -45,13 +45,12 @@
     line-height: 29px;
     text-transform: uppercase;
     font-weight: bold;
-    border: 1px rgba(0, 255, 0, 1);
+    border: 1px solid rgba(0, 255, 0, 1);
     transition: 1s all ease-in-out;
 }
 
 .btnSumbit:hover {
     background: #FFFFFF;
     color: rgb(5, 184, 5);
-    border: 1px solid rgb(5, 184, 5);
     transition: 0.5s all ease-out;
 }
