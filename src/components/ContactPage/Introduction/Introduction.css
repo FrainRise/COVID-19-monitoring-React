@@ -23,7 +23,7 @@
     text-align: center;
     letter-spacing: 2px;
     animation: stretching 1000ms ease-in-out forwards 200ms,
-    blinky 2500ms linear infinite 1000ms;
+      blinky 2500ms linear infinite 1000ms;
 }
 
 

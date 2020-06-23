@@ -64,7 +64,7 @@ export default class Navbar extends React.Component {
                                     to={link.route}
                                 >
                                     <li onClick={this.addClassActive.bind(this, link.id)}> 
-                                        <h2 className={this.state.activeId === link.id ? "link link--kukuri active" : "link link--kukuri"} data-letters={link.name}>{link.name}</h2>
+                                        <h2 className={this.state.activeId === link.id ? "link link--lined active" : "link link--lined"} data-letters={link.name}>{link.name}</h2>
                                     </li>
                                 </Link>
                             )  
