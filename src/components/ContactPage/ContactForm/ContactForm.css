@@ -46,7 +46,7 @@
     line-height: 29px;
     text-transform: uppercase;
     font-weight: bold;
-    border: 1px solid rgba(0, 255, 0, 1);
+    border: 2px solid rgba(0, 255, 0, 1);
     transition: 1s all ease-in-out;
 }
 

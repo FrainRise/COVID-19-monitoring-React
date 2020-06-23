@@ -1,5 +1,6 @@
 .infected{ 
     border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+    border-radius: 0 !important;
 }
 
 .infectedHeader {
@@ -11,6 +12,7 @@
 
 .recovered{ 
     border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+    border-radius: 0 !important;
 }
 
 .recoveredHeader {
@@ -22,6 +24,7 @@
 
 .deaths{ 
     border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+    border-radius: 0 !important;
 }
 
 .deathsHeader {

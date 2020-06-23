@@ -3,7 +3,7 @@ import React from 'react'
 import './MainPage.css'
 import './responsive-main.css'
 
-import {  Introduction, RulesSection, SymptomsSection } from '.'
+import {  Introduction, RulesSection, SymptomsSection, AdditionalInfoSection, LinksSection } from '.'
 // import image from '../../images/image.png'
 
 class MainPage extends React.Component {
@@ -14,6 +14,8 @@ class MainPage extends React.Component {
           <Introduction />
           <RulesSection />
           <SymptomsSection />
+          <AdditionalInfoSection />
+          <LinksSection />
         </div>
     );
   }
