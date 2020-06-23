@@ -43,7 +43,7 @@
 
     /* RulesSection */
     .rules-container{
-        height: 1450px;
+        height: 1550px;
     }
 
     .rules-title {
@@ -67,6 +67,33 @@
     }
 
     /* SymptomsSection component */
+    .symptoms-container{
+        height: 2300px;
+    }
+    
+    .symptoms-title{
+        margin: 75px 25px;
+        font-size: 25px;
+    }
+    
+    .cont-symptoms{
+        flex-direction: column !important;
+    }
+    
+    .symp-title {
+        margin: 40px 0;
+        font-size: 20px;
+    }
+    
+    .symp-icon {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .add-symp-title {
+        margin: 75px 25px;
+        font-size: 20px; 
+    }
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -134,6 +161,31 @@
         padding: 15px;
         width: 70vw;
     }
+
+    /* SymptomsSection component */
+    .symptoms-container{
+        height: 1100px;
+    }
+    
+    .symptoms-title{
+        margin: 75px 25px;
+        font-size: 25px;
+    }
+
+    .symp-title {
+        margin: 40px 0;
+        font-size: 20px;
+    }
+    
+    .symp-icon {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .add-symp-title {
+        margin: 75px 25px;
+        font-size: 20px; 
+    }
  }
  
  /* Medium devices (landscape tablets, 768px and up) */
@@ -168,7 +220,7 @@
 
     /* RulesSection */
     .rules-container{
-        height: 1450px;
+        height: 1750px;
     }
 
     .rules-title {
@@ -177,14 +229,39 @@
     }
 
     .rule-image {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 
     .rule-description {
         font-size: 27px;
         padding: 15px;
         width: 55vw;
+    }
+
+    /* SymptomsSection component */
+    .symptoms-container{
+        height: 1200px;
+    }
+    
+    .symptoms-title{
+        margin: 75px 25px;
+        font-size: 35px;
+    }
+        
+    .symp-title {
+        margin: 40px 0;
+        font-size: 20px;
+    }
+    
+    .symp-icon {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .add-symp-title {
+        margin: 75px 25px;
+        font-size: 25px; 
     }
  }
  
@@ -226,7 +303,7 @@
 
     /* RulesSection */
     .rules-container{
-        height: 1450px;
+        height: 1550px;
     }
 
     .rules-title {
@@ -244,6 +321,32 @@
         font-size: 25px;
         width: 500px;
         height: 200px;
+    }
+
+    /* SymptomsSection component */
+    .symptoms-container{
+        height: 1300px;
+    }
+    
+    .symptoms-title{
+        margin: 75px 25px;
+        font-size: 40px;
+    }
+        
+    .symp-title {
+        margin: 40px 0;
+        font-size: 20px;
+    }
+    
+    .symp-icon {
+        width: 300px;
+        height: 300px;
+        
+    }
+    
+    .add-symp-title {
+        margin: 75px 25px;
+        font-size: 25px; 
     }
  }
 
@@ -277,32 +380,58 @@
         font-size: 25px;
     }  
     
-        /* RulesSection Component */
-        .rules-container{
-            height: 1500px;
-        }
+    /* RulesSection Component */
+    .rules-container{
+        height: 1500px;
+    }
     
-        .rules-title {
-            margin: 75px 0;
-            font-size: 40px;
-        }
+    .rules-title {
+        margin: 75px 0;
+        font-size: 40px;
+    }
     
-        .rules-title {
-            margin: 75px 25px;
-            font-size: 25px;
-        }
+    .rules-title {
+         margin: 75px 25px;
+        font-size: 25px;
+    }
+
+      .rule-image {
+          width: 200px;
+          height: 200px;
+     }
     
-        .rule-image {
-            width: 200px;
-            height: 200px;
-        }
+     .rule-description {
+        padding: 50px;
+        font-size: 25px;
+        width: 500px;
+        height: 200px;
+    }
+
+    /* SymptomsSection component */
+    .symptoms-container{
+        height: 1200px;
+    }
     
-        .rule-description {
-            padding: 50px;
-            font-size: 25px;
-            width: 500px;
-            height: 200px;
-        }
+    .symptoms-title{
+        margin: 75px 25px;
+        font-size: 40px;
+    }
+    
+    .symp-title {
+        margin: 25px 0;
+        font-size: 20px;
+    }
+
+    .symp-icon {
+        width: 300px;
+        height: 300px;
+        margin: 0 40px;
+    }
+    
+    .add-symp-title {
+        margin: 75px 25px;
+        font-size: 25px;  
+    } 
  } 
 
  @media only screen and (min-width: 1800px) {
@@ -367,4 +496,31 @@
         width: 500px;
         height: 200px;
     }
+
+    /* SymptomsSection component */
+
+    .symptoms-container{
+        height: 1200px;
+    }
+    
+    .symptoms-title{
+        margin: 75px 25px;
+        font-size: 40px;
+    }
+    
+    .symp-title {
+        margin: 25px 0;
+        font-size: 20px;
+    }
+
+    .symp-icon {
+        width: 300px;
+        height: 300px;
+        margin: 0 40px;
+    }
+    
+    .add-symp-title {
+        margin: 75px 25px;
+        font-size: 25px;  
+    } 
  } 
