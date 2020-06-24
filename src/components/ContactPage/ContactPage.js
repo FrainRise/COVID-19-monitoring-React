@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Introduction, ContactForm } from '.'
+import { Introduction, ContactForm, AddressSection } from '.'
 import './responsive-contact.css'
 
 const ContactPage = () => {
@@ -8,6 +8,7 @@ const ContactPage = () => {
         <div>
             <Introduction />
             <ContactForm />
+            <AddressSection />
         </div>
     )
 }
