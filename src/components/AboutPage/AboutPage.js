@@ -2,8 +2,8 @@ import React from 'react'
 
 import './AboutPage.css'
 import './responsive-about.css'
-import ceoImage_male from '../../assets/images/Andrew.png'
-import ceoImage_female from '../../assets/images/Annie.png'
+import ceoImage_male from '../../assets/images/team/Andrew.png'
+import ceoImage_female from '../../assets/images/team/Annie.png'
 
 const AboutPage = () => {
     return (

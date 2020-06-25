@@ -3,7 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/images/covid.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/images/bg-images/covid.jpg");
     opacity: 1;
 }
 
