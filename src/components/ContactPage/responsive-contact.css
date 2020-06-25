@@ -1,4 +1,5 @@
 @media only screen and (max-width: 600px) {
+    /* ContactForm component */
     .wrapper-contact {
         height: 550px;
     }
@@ -33,9 +34,53 @@
         padding: 5%;
         width: 80%;
     }
-  
+
+    /* AddressSection component */
+    .address-container {
+        height: 900px;
+    }
+    
+    .local-title, .address-title, .address-descr {
+        padding: 15px 0;
+    }
+    
+    .local-title {
+        font-size: 25px;
+    }
+    
+    .address-title {
+        font-size: 20px;
+    }
+    
+    .address-descr {
+        font-size: 15px;
+    }
+    
+    .location-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .address-wrapper {
+        display: block;
+        margin: 25px;
+    
+    }
+    
+    .address-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .map-image {
+        width: 310px;
+    }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+    /* ContactForm component */
     .wrapper-contact {
         height: 700px;
     }
@@ -68,10 +113,52 @@
         padding: 3.5%;
         width: 400px;
     }
+
+    /* AddressSection component */
+    .address-container {
+        height: 900px;
+    }
+    
+    .local-title, .address-title, .address-descr {
+        padding: 15px 0;
+    }
+    
+    .local-title {
+        font-size: 32px;
+    }
+    
+    .address-title {
+        font-size: 22px;
+    }
+    
+    .address-descr {
+        font-size: 15px;
+    }
+    
+    .location-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .address-wrapper {
+        display: block;
+        margin: 25px;
+    
+    }
+    
+    .address-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
-
+    /* ContactForm component */
     .contactTitle {
         padding: 350px 0;
         font-size: 40px;
@@ -92,9 +179,53 @@
         padding: 3.5%;
         width: 400px;
     }
+
+    /* AddressSection component */
+    .address-container {
+        height: 700px;
+    }
+    
+    .local-title, .address-title, .address-descr {
+        padding: 15px 0;
+    }
+    
+    .local-title {
+        font-size: 40px;
+    }
+    
+    .address-title {
+        font-size: 25px;
+    }
+    
+    .address-descr {
+        font-size: 18px;
+    }
+    
+    .location-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .local-address {
+        display: inherit;
+    }
+    
+    .address-wrapper {
+        margin: 50px;
+    }
+    
+    .address-icon {
+        width: 75px;
+        height: 75px;
+    }
 }
 
 @media only screen and (min-width: 992px)  {
+    /* ContactForm component */
     .contactForm h2 {
         font-size: 40px;
         padding: 75px 0 25px 0;
@@ -108,5 +239,99 @@
     
     .btnSumbit {
         width: 400px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+    /* AddressSection component */
+    .address-container {
+        height: 700px;
+    }
+    
+    .local-title, .address-title, .address-descr {
+        padding: 15px 0;
+    }
+    
+    .local-title {
+        font-size: 40px;
+    }
+    
+    .address-title {
+        font-size: 25px;
+    }
+    
+    .address-descr {
+        font-size: 18px;
+    }
+    
+    .location-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .local-address {
+        display: inherit;
+    }
+    
+    .address-wrapper {
+        margin: 50px;
+    }
+    
+    .address-icon {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    /* AddressSection component */
+    .address-container {
+        height: 500px;
+    }
+    
+    .local-title, .address-title, .address-descr {
+        padding: 15px 0;
+    }
+    
+    .local-title {
+        font-size: 40px;
+    }
+    
+    .address-title {
+        font-size: 25px;
+    }
+    
+    .address-descr {
+        font-size: 18px;
+    }
+    
+    .location-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .local-address {
+        display: inherit;
+    }
+    
+    .address-wrapper {
+        margin: 50px;
+    }
+    
+    .address-icon {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .map-image {
+        margin-right: 25px;
     }
 }
