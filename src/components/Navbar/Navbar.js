@@ -1,6 +1,6 @@
 import React from 'react'
 //import { FaAlignLeft } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import  './Navbar.css'
 import './responsive-navbar.css'
@@ -15,9 +15,9 @@ export default class Navbar extends React.Component {
         this.setState({ isToggled: !this.state.isToggled })
     }
 
-    addClassActive = (id) => {
-        this.setState({ activeId: id })
-    }
+    // addClassActive = (id) => {
+    //     this.setState({ activeId: id })
+    // }
 
     componentDidMount() {
         const header = document.getElementById('customHeader');
@@ -38,7 +38,7 @@ export default class Navbar extends React.Component {
 
     render(){
         const navLinks = [
-            {id: 1, name: 'Home', route: '/'},
+            {id: 1, name: 'Home', route: '/home'},
             {id: 2, name: 'Covid-19', route: '/covid-stat'},
             {id: 3, name: 'About Project', route: '/about-project'},
             {id: 4, name: 'Contact Us', route: '/contact-us'}
@@ -59,14 +59,18 @@ export default class Navbar extends React.Component {
                     { 
                         navLinks.map((link) => {
                             return (
-                                <Link 
+                                <NavLink 
                                     key={link.id} 
                                     to={link.route}
+                                    activeClassName="active" 
+                                    style={{color: '#7e7e7e'}}
                                 >
-                                    <li onClick={this.addClassActive.bind(this, link.id)}> 
-                                        <h2 className={this.state.activeId === link.id ? "link link--lined active" : "link link--lined"} data-letters={link.name}>{link.name}</h2>
+                                    <li /*onClick={this.addClassActive.bind(this, link.id)}*/ key={link.id} > 
+                                        <h2 className="link link--lined" data-letters={link.name}>
+                                            {link.name}
+                                        </h2>
                                     </li>
-                                </Link>
+                                </NavLink>
                             )  
                         })
                     }             
@@ -75,3 +79,5 @@ export default class Navbar extends React.Component {
         )
     }
 }
+
+// {this.state.activeId === link.id ? "link link--lined active" : "link link--lined"} 

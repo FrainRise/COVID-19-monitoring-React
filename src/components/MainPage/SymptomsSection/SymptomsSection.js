@@ -28,7 +28,7 @@ const SymptomsSection = () => {
                 {
                     mainSymptoms.map((symptom) => {
                         return (
-                            <div className="info-container">
+                            <div className="info-container" key={symptom.id}>
                                 <h4 className="symp-title">{symptom.name}</h4>
                                 <img src={symptom.image} alt={symptom.alt} className="symp-icon"/>
                             </div>
@@ -41,7 +41,7 @@ const SymptomsSection = () => {
             {
                 additionalSymptoms.map((symptom) => {
                         return (
-                            <div className="info-container">
+                            <div className="info-container" key={symptom.id}>
                                 <h4 className="symp-title">{symptom.name}</h4>
                                 <img src={symptom.image} alt={symptom.alt} className="symp-icon"/>
                             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import  './Introduction.css'
 
 const Introduction = () => {
@@ -14,11 +14,11 @@ const Introduction = () => {
                     <h2 className="hashtag">#Staysafestayhome</h2>
                 </div>
             </div>
-            <Link to='/covid-stat' style={{textDecoration: 'none'}}>
+            <NavLink to='/covid-stat' style={{textDecoration: 'none'}}>
                 <button type="button" className="btn-stat">
                     Show Chart
                 </button>
-            </Link>
+            </NavLink>
 
         </div>
     )
