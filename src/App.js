@@ -12,7 +12,7 @@ class App extends React.Component {
         <React.Fragment>
           <Navbar />
             <Switch>
-              <Route path='/home' component={MainPage} exact/>
+              <Route path='/home' component={MainPage} exact />
               <Route path='/contact-us' component={ContactPage} />
               <Route path='/about-project' component={AboutPage} />
               <Route path='/covid-stat' component={StatisticPage} />

@@ -21,7 +21,7 @@ const AddressSection = () => {
                 <div className="local-address">
                     {addresCreds.map((address) => {
                         return (
-                            <div className="address-wrapper">
+                            <div className="address-wrapper" key={address.id}>
                                 <img src={address.image} alt={address.alt} className="address-icon"/>
                                 <h2 className="address-title">{address.name}</h2>
                                 <p className="address-descr">{address.description}</p>

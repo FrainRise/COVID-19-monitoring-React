@@ -15,12 +15,12 @@ export default class ContactForm extends React.Component {
             email: '',
             subject: '',
             description: ''
-        }
+        },
+        isSending: false
     }
 
     handleChangeInput = e => {
         this.setState({ [e.target.name]: e.target.value});
-        console.log(e.target.name)
     }
 
     validateMail() {
@@ -59,8 +59,9 @@ export default class ContactForm extends React.Component {
 
     sendMessage(e) {
         e.preventDefault();
+        this.setState({ isSending: true })
         if(!this.validateMail) {
-            return ;
+            return alert('Enter correct credentials');
         }
 
         let templateParams = {
@@ -72,7 +73,7 @@ export default class ContactForm extends React.Component {
 
         emailjs.send('gmail','template_S6C5HxXY', templateParams, 'user_weOyQeOjIBJOmWL3D08QF')
             .then((res) => {
-                console.log('SUCCESS', res.status, res.text)
+                this.setState({ isSending: false })
                 alert('The message has been sent')
             }, function (err){
                 console.log(err);
@@ -137,6 +138,7 @@ export default class ContactForm extends React.Component {
                 >
                     Send Message
                 </button>
+                {this.state.isSending ? <p className="text-info">The message is sending</p> : null}
             </form>
         )
     }
