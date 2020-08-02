@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import { MainPage, ContactPage, AboutPage, Navbar, Footer, StatisticPage} from './components/index';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 
 class App extends React.Component {
@@ -12,6 +12,7 @@ class App extends React.Component {
         <React.Fragment>
           <Navbar />
             <Switch>
+              <Redirect exact from="/" to="home" />
               <Route path='/home' component={MainPage} exact />
               <Route path='/contact-us' component={ContactPage} />
               <Route path='/about-project' component={AboutPage} />
