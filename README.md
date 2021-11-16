@@ -1,4 +1,6 @@
 # COVID monitoring app
+This application allows you to track the statistics of patients who sick, recovered and died from coronovirus infection(COVID-19). 
+You can track statistics globally and separately for each country. 
 
 ## Available Scripts
 
